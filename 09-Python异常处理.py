@@ -28,3 +28,4 @@ def divide(x, y):
         print("executing finally clause")
 
 divide(2,0)
+divide(2,1)
