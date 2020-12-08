@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 # Author xiao
-
+#自定义函数
 def myFoo(str):
     print(str)
     return
@@ -48,3 +48,5 @@ printinfo(70, 60, "ddd")
 sum = lambda arg1, arg2: arg1 + arg2
 
 print("调用lambda匿名函数：",sum(10,21))
+
+

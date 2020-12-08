@@ -57,10 +57,45 @@ print("size=",size)
 #3、List（列表）
 car_list=["A","B","C","1"]
 dir(car_list)
+
+for value in range(2):
+    print(value)
+for value in range(0,2):#两种写法一致，不包含第二个数
+    print(value)
+for value in range(1,11,2):#1开始+2，并小于11
+    print(value)
+l=[]
+for value in range(3,30,3):
+    l.append(value)
+print(l)
+#将一个列表存储到另一个列表
+l2=l[:]
+#这是不行的，两个变量是指向同一个列表
+#l2=l
+l.append(30)
+print(l2)
+
 #4、Tuple（元组）
+#元组的元素不可变
+t1 = (1,2,{'k1':'v1'})
+#del t1[0]
+#t1[2] = 123
+#元组元素的元素可变
+t1[2]['k1'] = 2
+print(t1)
 #5、Set（集合）
 #6、Dictionary（字典）
+#键-值对
+user_0={
+    'username':'efermi',
+    'first':'enrico',
+    'last':'fermi',#加逗号，为以后下一行添加键值对做好准备
 
+}
+for key,value in user_0.items():
+    print("\nKey："+key)
+    print("\nValue："+value)
+                                                         
 
 #类型转换
 '''
@@ -94,3 +129,4 @@ hex(x) 将一个整数转换为一个十六进制字符串
 
 oct(x) 将一个整数转换为一个八进制字符串
 '''
+

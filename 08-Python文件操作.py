@@ -17,4 +17,12 @@ print("文件读取：%s"%(file.read()))
 # 查找当前位置
 path = file.tell()
 print(path)
+
+
+
+file = open("test.txt","r")#读写
+for line in file.readlines():  # 依次读取每行
+    line = line.strip()  # 去掉每行头尾空白
+    print("读取的数据为: %s" % (line))
 file.close()
+
